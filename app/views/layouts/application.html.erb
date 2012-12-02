@@ -8,15 +8,17 @@
   <meta name="keywords" content="<%=yield :keywords%>">
   <meta name="description" content="<%=yield(:description) %>">
   <link rel="author" href="<%= yield :google_plus_profile%>"/>
-  
-
+  <script ="text/javascript">
+       $(window).load(function() {
+       $('.blueberry').blueberry();
+       });
+   </script>
 </head>
 <body>
 
 <%= yield %>
 
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-21575782-1']);
   _gaq.push(['_trackPageview']);
