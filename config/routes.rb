@@ -1,6 +1,8 @@
 DansWebsite::Application.routes.draw do
   root to: "pages#home"
   #get 'pages/home' => 'pages#home'
+  get 'about' => 'pages#about'
+  
   get 'fishing-gear' => 'pages#home'
 
   # The priority is based upon order of creation:
