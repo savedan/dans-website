@@ -1,0 +1,302 @@
+@font-face {
+	font-family: Crimson-Roman;
+	src: url("Crimson-Roman.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Crimson-Semibold;
+	src: url("Crimson-Semibold.otf") format("opentype");
+}
+
+
+
+body {
+	font-family: 'Open Sans';
+	background-color: #F8F8F8;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	font-family: 'Bree Serif';
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	line-height: 40px;
+}
+
+h2 a {
+	color: white;
+	font-style: underline;
+}
+
+.headline {
+	background: #F8F8F8;
+	text-align: center;
+	font-family: 'Open Sans';
+	height: 125px;
+	margin: 75px 0 40px 0;
+} 
+
+.logo {
+	background-color: #6196a0;
+	height: 100px;
+} 
+
+.headline h2 {
+	text-align: center;
+	color: black;
+	font: 800 64px/64px "Open Sans";
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	margin-bottom: 20px;
+}
+
+.headline h3 {
+	text-align: center;
+	color: #333A3B;
+	font: 800 28px/28px "Open Sans";
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	margin-bottom: 20px;
+}
+
+.kern {
+	font: 400 64px/64px "gentium book basic";
+	font-style: italic;
+	text-transform: none;
+}
+
+.smallkern {
+	font: 400 28px/28px "gentium book basic";
+	font-style: italic;
+	text-transform: none;
+}
+
+.headline h2.link a {
+	color: black;
+	font-style: underline;
+}
+
+.blueberry { 
+	margin: 0 auto;
+	width: 1200px;
+}
+.blueberry .slides {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.blueberry .slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden; 
+}
+.blueberry .slides li img {
+	display: block;
+	width: 100%; 
+	max-width: none;
+}
+.blueberry .slides li.active { display: block; position: relative; }
+.blueberry .crop li img { width: auto; }
+
+.blueberry .pager {
+	height: 40px;
+	text-align: center;
+}
+.blueberry .pager li { display: inline-block; }
+.blueberry .pager li a,
+.blueberry .pager li a span {
+	display: block;
+	height: 4px;
+	width: 4px;
+}
+.blueberry .pager li a {
+	padding: 18px 8px;
+	-webkit-border-radius: 6px;
+   	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.blueberry .pager li a span {
+	overflow: hidden;
+	background: #c0c0c0;
+	text-indent: -9999px;
+	-webkit-border-radius: 2px;
+   	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.blueberry .pager li.active a span { background: #404040; }
+
+.middle {
+	height: 250px;
+}
+
+.location {
+	position: absolute;
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'Bree Serif';
+	text-align: left;
+	margin: 30px 0px 0px 450px;
+	padding: 10px 0 75px 0;
+	line-height: 2.0em;
+}
+
+.phone {
+	font-size: 14px;
+	font-family: 'Bree Serif';
+}
+
+.smallmap {
+	display: inline-block;
+	margin: 30px 0px 75px 265px;
+}
+
+.bucktown {	
+	font-size: 16px;
+	font-family: 'Open Sans';
+}
+
+.operation {
+	float: right;
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'Bree Serif';
+	margin: 60px 290px 75px 0;
+	line-height: 2.0em;
+
+}
+
+.operation p {
+	text-align: center;
+}
+
+.hours {
+	font: 800 18px/18px "Open Sans";
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.bottom {
+	background: #babebf;
+	height: 500px;
+}
+
+.hline {
+    border-bottom: solid #ffffff;
+    border-bottom-width: 1px;
+    width: 125px; 
+}
+
+.services {
+	margin: 0 0 0 120px;
+	padding: 40px 0 0 0;
+	width: 300px;
+}
+
+.services h3 {
+	font-size: 18px;
+	font-family: 'Bree Serif';
+	font-weight: bold;
+	text-align: center;
+}
+
+.services p {
+	font-size: 16px;
+	font-family: 'Open Sans';
+	padding: 20px 0 15px 35px;
+	width: 300px;
+}
+
+.checkmark {
+	font: 800 20px/20px 'Open Sans';
+}
+
+.services iframe {
+	padding-left: 80px;
+}
+
+.services a {
+	padding-left: 65px;
+	color: #333A3B;
+	font: 800 14px/14px "gentium book basic";
+	text-decoration: none;
+}
+
+.testimonials {
+	float: left;
+	margin: -395px 100px 0 550px;
+	padding: 40px 0 0 0;
+	width: 300px;
+}
+
+.testimonials h3 {
+	font-size: 18px;
+	font-family: 'Bree Serif';
+	font-weight: bold;
+	text-align: center;
+}
+
+.testimonials p {
+	float: right;
+	font-size: 16px;
+	font-family: 'Open Sans';
+	padding: 20px 0 15px 35px;
+}
+
+.quote1 img {
+	margin: 25px 0 0 0;
+	padding: 0 0 0 50px;
+}
+
+.quote2 img {
+	margin: 0 0 0 0;
+	padding: 0 50px;
+}
+
+.quote {
+	color: #333A3B;
+	font: 400 14px/14px "gentium book basic";
+	text-decoration: none;
+	font-style: italic;
+	margin: 0 0 50px 0;
+}
+
+.name {
+	font-size: 16px;
+	font-family: 'Bree Serif';
+	font-weight: bold;
+}
+
+.about {
+	float: right;
+	margin: -395px 125px 0 0;
+	padding: 40px 0 0 0;
+	width: 300px;
+}
+
+.about h3 {
+	font-size: 18px;
+	font-family: 'Bree Serif';
+	font-weight: bold;
+	text-align: center;
+}
+
+.about p {
+	font-size: 16px;
+	font-family: 'Open Sans';
+	padding: 25px 0 0 0;
+	text-align: center;
+}
+
+.about iframe {
+	padding-top: 25px;
+}
+
+.about a {
+	text-align: center;
+	color: #333A3B;
+	font: 800 14px/14px "gentium book basic";
+	text-decoration: none;
+}

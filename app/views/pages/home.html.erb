@@ -11,5 +11,71 @@
 <%=@google_plus_profile%>
 <% end %>
 
-<h1>Home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+  <div class="headline">
+      <h2>Dan's Tackle <span class="kern">&</span> Fly Shop</h2>
+      <h3>Gear <span class="smallkern">&</span> knowledge you need to catch more fish.</h3> 
+  </div>
+  <div class="blueberry">
+      <ul class="slides">
+          <li><%= image_tag("flyfishing.jpg") %></li>
+          <li><%= image_tag("flyfishing.jpg") %></li>
+          <li><%= image_tag("flyfishing.jpg") %></li>
+          <li><%= image_tag("flyfishing.jpg") %></li>
+      </ul>
+      <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+      </ul>
+  </div>
+      <div class="middle">
+          <div class="location">    
+              <p>2237 W McLean Ave.</p>
+              <p>Chicago, IL 606047</p>
+              <p><span class="phone">p.</span> (773) 276-5562</p>
+              <p class="bucktown">In the heart of Bucktown</p>
+          </div>
+           <div class="smallmap">
+              <%= image_tag("https://dl.dropbox.com/u/77157332/Captured/ymAOu.png", :alt => "Map of Dan\'s Tackle and Fly Gear") %>
+          </div>
+          <div class="operation">
+              <p class="hours">Open Mon.-Sun. from 9 AM to 10 PM</p>
+              <p>Call for an appointment with Dan.</p>
+              <p>Hanging out at Dan's encouraged!</p>
+          </div>
+      </div>
+  <div class="bottom">
+      <div class="services">
+          <h3>What Dan Does</h3>
+          <hr class="hline" />
+          <p><span class="checkmark">√</span>   Builds custom rods designed for you</p>
+          <iframe width="150" height="113" src="http://www.youtube.com/embed/1gf3VXq-qp0" frameborder="0" allowfullscreen></iframe>
+         <p><a href="#">Watch a Video--></a></p>
+          <p><span class="checkmark">√</span>   Knows the best fishing holes</p>
+          <p><a href="#">See the List--></a></p>
+      </div>
+      <div class="testimonials">
+          <h3>Success Stories</h3>
+          <hr class="hline" />
+          <div class="quote1">
+              <%= image_tag("testimonial2.jpg", :alt => "Map of Dan\'s Tackle and Fly Gear") %>
+              <!-- <img alt="Map of Dan's Tackle and Fly Gear" src="testimonial2.jpg"/> -->
+              <p class="name">Joe Fisherman</p>
+              <p class="quote">"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"</p>
+          </div>
+          <div class="quote2">
+              <%= image_tag("testimonial2.jpg", :alt => "Map of Dan\'s Tackle and Fly Gear") %>
+              <!-- <img alt="Map of Dan's Tackle and Fly Gear" src="testimonial2.jpg"/> -->
+              <p class="name">Fisher Mann</p>
+              <p class="quote">"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"</p>
+          </div>
+      </div>
+      <div class="about">
+          <h3>Dan's Story</h3>
+          <hr class="hline" />
+          <iframe width="300" height="225" src="http://www.youtube.com/embed/1gf3VXq-qp0" frameborder="0" allowfullscreen></iframe>
+          <p>"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"</p>
+          <p><a href="#">More About Dan--></a></p>
+      </div>
+</div>
