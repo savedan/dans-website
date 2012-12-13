@@ -1,81 +1,100 @@
 <% content_for :title do %>
-<%=@title%>
+<%=@title -%>
 <% end %>
 <% content_for :description do %>
-<%=@description%>
+<%=@description -%>
 <% end %>
 <% content_for :keywords do %>
-<%=@keywords%>
+<%=@keywords -%>
 <% end %>
 <% content_for :google_plus_profile do %>
-<%=@google_plus_profile%>
+<%=@google_plus_profile -%>
 <% end %>
 
-  <div class="headline">
-      <h2>Dan's Tackle <span class="kern">&</span> Fly Shop</h2>
-      <h3>Gear <span class="smallkern">&</span> knowledge you need to catch more fish.</h3> 
-  </div>
-  <div class="blueberry">
-      <ul class="slides">
-          <li><%= image_tag("flyfishing.jpg") %></li>
-          <li><%= image_tag("flyfishing.jpg") %></li>
-          <li><%= image_tag("flyfishing.jpg") %></li>
-          <li><%= image_tag("flyfishing.jpg") %></li>
-      </ul>
-      <ul class="pager">
-          <li><a href="#"><span></span></a></li>
-          <li><a href="#"><span></span></a></li>
-          <li><a href="#"><span></span></a></li>
-          <li><a href="#"><span></span></a></li>
-      </ul>
-  </div>
-      <div class="middle">
-          <div class="location">    
-              <p>2237 W McLean Ave.</p>
-              <p>Chicago, IL 606047</p>
-              <p><span class="phone">p.</span> (773) 276-5562</p>
-              <p class="bucktown">In the heart of Bucktown</p>
-          </div>
-           <div class="smallmap">
-              <%= image_tag("https://dl.dropbox.com/u/77157332/Captured/ymAOu.png", :alt => "Map of Dan\'s Tackle and Fly Gear") %>
-          </div>
-          <div class="operation">
-              <p class="hours">Open Mon.-Sun. from 9 AM to 10 PM</p>
-              <p>Call for an appointment with Dan.</p>
-              <p>Hanging out at Dan's encouraged!</p>
-          </div>
-      </div>
-  <div class="bottom">
-      <div class="services">
-          <h3>What Dan Does</h3>
-          <hr class="hline" />
-          <p><span class="checkmark">√</span>   Builds custom rods designed for you</p>
-          <iframe width="150" height="113" src="http://www.youtube.com/embed/1gf3VXq-qp0" frameborder="0" allowfullscreen></iframe>
-         <p><a href="#">Watch a Video--></a></p>
-          <p><span class="checkmark">√</span>   Knows the best fishing holes</p>
-          <p><a href="#">See the List--></a></p>
-      </div>
-      <div class="testimonials">
-          <h3>Success Stories</h3>
-          <hr class="hline" />
-          <div class="quote1">
-              <%= image_tag("testimonial2.jpg", :alt => "Map of Dan\'s Tackle and Fly Gear") %>
-              <!-- <img alt="Map of Dan's Tackle and Fly Gear" src="testimonial2.jpg"/> -->
-              <p class="name">Joe Fisherman</p>
-              <p class="quote">"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"</p>
-          </div>
-          <div class="quote2">
-              <%= image_tag("testimonial2.jpg", :alt => "Map of Dan\'s Tackle and Fly Gear") %>
-              <!-- <img alt="Map of Dan's Tackle and Fly Gear" src="testimonial2.jpg"/> -->
-              <p class="name">Fisher Mann</p>
-              <p class="quote">"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"</p>
-          </div>
-      </div>
-      <div class="about">
-          <h3>Dan's Story</h3>
-          <hr class="hline" />
-          <iframe width="300" height="225" src="http://www.youtube.com/embed/1gf3VXq-qp0" frameborder="0" allowfullscreen></iframe>
-          <p>"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"</p>
-          <p><a href="#">More About Dan--></a></p>
-      </div>
-</div>
+
+    <div class="title">
+        <h1 class="maintitle">DAN&rsquo;S TACKLE <%= image_tag("headline_ampersand.png")%> FLY GEAR</h1>
+    </div>
+
+    <div class="blueberry">
+        <ul class="slides">
+            <li><%= image_tag("hero-layer-dan.jpg") %>
+                <h2>MEET DAN</h2>
+                <p>Since 1981, Dan's Tackle Service 981 and Dan has been creating custom rods and flies for 60 years. Dan is a Chicago fly fishing icon.</p>
+                <a class="learn-more-button" href="http://www.danstackleservice.com/about.html">Learn More</a>
+            </li>
+            <li><%= image_tag("hero-layer-gear.jpg")%>
+                <h2>RODS & GEAR</h2>
+                <p>Custom fly rods are Danʼs specialty. Heʼs been building them since 1970. Beyond rods, Danʼs shop has all of the gear youʼll need.</p>
+                <a class="learn-more-button" href="http://www.danstackleservice.com/custom-rods-fly-gear.html">Learn More</a>
+            </li>
+            <li><%=image_tag("hero-layer-customer.jpg") %>
+                <h2>DAN&rsquo;S FANS</h2>
+                <p>One trip to Dan's and you're hooked. See Dan's customers talk about their experiences at Dan's and the fish they've caught as a result.</p>
+                <a class="learn-more-button" href="http://www.danstackleservice.com/testimonials.html">Learn More</a>
+            </li>
+        </ul>
+        <ul class="pager">
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+        </ul>
+    </div>
+
+<div><h2 class="subhead">Three ways to get hooked on Dan...</h2></div>
+
+<section class="hooked-on-dan">
+    <ul>
+        <li class="hooked-rods">
+            <h3>Create hand-crafted custom rods one-on-one with an old pro</h3>
+            <a href="http://www.danstackleservice.com/custom-rods-fly-gear.html">About Dan's Rods</a>
+        </li>
+        <li class="hooked-scope">
+            <h3>Get the inside scoop on the best fishing holes in your area.</h3>
+            <a href="http://www.danstackleservice.com/best-fishing-locations.html">See the Holes</a>
+        </li>
+        <li class="hooked-family">
+            <h3>Every customer of Dan's is a part of his fisherman family.</h3>
+            <a href="http://www.danstackleservice.com/testimonials.html">About the Fam</a>
+        </li>
+    </ul>
+</section>
+
+ <section class="about-dan">
+    <ul>
+        <li class="who-is-dan">
+            <h3>Who is Dan?</h3>
+            <p>In 1946, Dan and his mother took the bus to downtown Chicago and Dan cast his first line in Montrose Harbor. Even at four years old, Dan was hooked. Dan quickly learned the art of fly fishing and fly tying. At thirteen years old, Dan sold his first flies to fisherman on the Chicago lakefront. Fast forward to today, where Dan has become Chicago's foremost authority on fly fishing.</p>
+            <a href="http://www.danstackleservice.com/about.html">More About Dan</a>
+        </li>
+        <li class="dan-specialty">
+            <h3>Dan's Specialty</h3>
+             <p>Custom fly rods are Danʼs specialty -- heʼs been building them since 1970. Dan takes the time to get to know you to craft a rod just for you. His sixty- six years of experience will result in a rod you will be proud of for years to come.  Dan also makes flies that will be perfect for your destination. Stop by the shop and Dan will make a fly while you watch or even teach you how to do it yourself.</p>
+            <a href="http://www.danstackleservice.com/custom-rods-fly-gear.html">Check Out Some Rods</a>
+        </li>
+        <li class="the-shop">
+            <h3>The Shop</h3>
+             <p>Like many of the best fishing locations in the world, Danʼs shop is a little bit hard to find. But if youʼre serious about fly fishing, itʼs worth the effort. Danʼs little shop has all of the gear youʼll need for your next fishing trip, be it to your local river or to a destination like Alaska. Whether youʼre a beginner or an expert, Dan has the gear and the knowledge to make your next fishing trip a success.</p>
+            <a href="http://www.danstackleservice.com/contact.html">Find the Shop</a>
+        </li>
+    </ul>
+</section>
+
+<section class="quotes">
+    <iframe width="450" height="300" src="http://www.youtube.com/embed/1gf3VXq-qp0" frameborder="0" allowfullscreen></iframe>
+
+    <ul>
+        <li class="shay">
+            <p class="quote-text"><span class="open-quote-mark">&ldquo;</span>Dan is incredible, not only is he a fishing wise man but an all round great person. I make as many trips to Dan's to pick up tackle as I do to just catch up.<span class="close-quote-mark">&rdquo;</span></p>
+            <p class="quote-name">&mdash;Shay Howe</p>
+        </li>
+        <li class="dustin">
+            <p class="quote-text"><span class="open-quote-mark">&ldquo;</span>I love Dan's.  It's the easiest and coolest shopping experience. I walk out of Dan's feeling good about getting the right gear at a fair price.<span class="close-quote-mark">&rdquo;</span></p>
+            <p class="quote-name">&mdash;Dustin Anderson</p>
+        </li>
+    </ul>
+</section>
+
+
+
+

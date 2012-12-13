@@ -1,0 +1,38 @@
+<% content_for :title do %>
+<%=@title -%>
+<% end %>
+<% content_for :description do %>
+<%=@description -%>
+<% end %>
+<% content_for :keywords do %>
+<%=@keywords -%>
+<% end %>
+<% content_for :google_plus_profile do %>
+<%=@google_plus_profile -%>
+<% end %>
+
+<div id="contact-wrapper">
+  
+  <h1>Contacting Dan</h1>
+
+    <section>          
+        <article class="contact">
+          <p class = "contact-dan"><%=image_tag("house.jpg", :alt => "Visit Dan's Tackle & Fly Shop")%>Call Dan with any questions about fly fishing gear, fly tying, great fishing holes or about anything else. Dan's got an interesting perspective on just about everything.</p>
+
+          <ul class="address">
+			        <li class="mapquest"><a href="https://maps.google.com/maps?hl=en&q=2237+W.+McLean+Ave,+Chicago,+IL+60647&ie=UTF-8&hq=&hnear=0x880fd296614f2b43:0xfd074030d22dae1,2237+W+McLean+Ave,+Chicago,+IL+60647&gl=us&ei=t43EULzdHJDg2wWXpYAg&ved=0CCsQ8gEwAA" target="_blank"><%=image_tag("mapquest.jpg") %></a>
+          
+              <a href="https://maps.google.com/maps?hl=en&q=2237+W.+McLean+Ave,+Chicago,+IL+60647&ie=UTF-8&hq=&hnear=0x880fd296614f2b43:0xfd074030d22dae1,2237+W+McLean+Ave,+Chicago,+IL+60647&gl=us&ei=t43EULzdHJDg2wWXpYAg&ved=0CCsQ8gEwAA" target="_blank"><span class="map-link">Click to view google map</span></a>			
+          	 </li><br>
+          	<li><span>Address:</span> 2237 W. McLean Ave, Chicago, IL 60647</li>
+    				<li><span>Hours:</span> Open 7 Days a Week | 9am to 9pm</li> 
+    				<li><span>Phone:</span> 773-276-5562</li>
+    				<li><span>Website: </span><%=link_to "www.danstackleservice.com", "/home"%></li>
+    				<li><span>Email: </span><a href="mailto:danstackle@aol.com">danstackle@aol.com</a></li>
+    				<li><span>Yelp: </span><a href="http://www.yelp.com/biz/dans-tackle-service-chicago" target="_blank">Dan's Tackle Service on Yelp.com</a></li>
+		     </ul>
+			  <div class="clear"></div>
+	     </article>           
+    </section>
+</div>
+<%=link_to "www.danstackleservice.com", "/home"%>

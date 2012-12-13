@@ -1,0 +1,33 @@
+<% content_for :title do %>
+<%=@title -%>
+<% end %>
+<% content_for :description do %>
+<%=@description -%>
+<% end %>
+<% content_for :keywords do %>
+<%=@keywords -%>
+<% end %>
+<% content_for :google_plus_profile do %>
+<%=@google_plus_profile -%>
+<% end %>
+
+<div id="about-wrapper">
+	<h1>About Dan</h1>
+	<%=image_tag("aboutus.png", :alt => "Dan's Tackle and Fly Gear, Since 1981")%>
+
+
+	<section class="about">
+
+		<h2 class="dan-since">A Brief History of Dan</h2>
+		<p>In 1946, Dan and his mother took the bus to downtown Chicago and Dan cast his first line in Montrose Harbor. Even at four years old, Dan knew he was hooked. Dan continued to fish throughout his childhood and taught himself the art of fly fishing and fly tying. At thirteen years old, Dan sold his first flies to fisherman on the Chicago lakefront.
+		<br><br>
+		Dan's 60 years of fly fishing experience led him to open Dan's Tackle Service in 1981, a shop run out of the same childhood home where he learned to fish in those early years.  Dan's has become the best resource for fly fishing knowledge and gear in the Chicagoland area and his shop is a regular haunt for experienced and newbie fisherman alike.<%=link_to "Contact Dan", "/contact"%></p>
+
+		<h2>Dan Knows Fishing Holes</h2>
+		<p>	Like many of the best fishing locations in the world, Danʼs shop is a little bit hard to find. But if youʼre serious about fly fishing, itʼs worth the effort. Contrary to popular belief, there are plenty of great spots to fly fish in and around Chicago and Dan knows just where to go. Dan has also fished all over the world and can tell you the best spots in Alaska, Saskatchewan, the Bahamas and more. If you need help planning your next fishing trip, give Dan a call.<%=link_to "See the Fishing Holes", "/best-fishing-locations"%></p>
+
+		<h2>Dan's Specialty - Custom Rods</h2>
+		<p>Custom fly rods are Danʼs specialty -- heʼs been building them since 1970. Dan will get to know you and spend the time necessary to help you build the perfect rod. His sixty-six years of experience will result in a rod you will be proud of for years to come. In addition to rods, Danʼs shop has all of the gear youʼll need, be it to your local fishing hole or to a destination like Alaska. Whether youʼre a beginner or an expert, Dan has the gear and the knowledge to make your next fishing trip a success.<%=link_to "See the Gear", "/custom-rods-fly-gear"%></p>
+
+	</section>	
+</div>

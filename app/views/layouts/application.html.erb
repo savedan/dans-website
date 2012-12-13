@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
       <title><%= yield :title %></title>
-      <%= stylesheet_link_tag    "application", :media => "all" %>
-      <%= javascript_include_tag "application" %>
+      <%= stylesheet_link_tag "application", :media => "all" %>
       <%= csrf_meta_tags %>
-      <meta name="keywords" content="<%=yield :keywords%>">
+      <meta name="keywords" content="<%=yield :keywords %>">
       <meta name="description" content="<%=yield(:description) %>">
-      <link rel="author" href="<%= yield :google_plus_profile%>"/>
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'/>
-      <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
+      <link rel="author" href="<%= yield :google_plus_profile %>"/>
+      <!-- <link rel="stylesheet" href="css/reset.css"> -->
+      <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+
+       <meta charset="utf-8"/>
+       
+       <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
+       <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+       
+
+       <%= javascript_include_tag "application" %>
+       
       <script ="text/javascript">
            $(window).load(function() {
            $('.blueberry').blueberry();
            });
        </script>
-    </head>
+  </head>
 <body>
+		<header>
+			<h1 class="logo"><%= image_tag("dan-logo.png", :alt => "Dan's Tackle Shop")%></h1>
+  		<nav>
+    		<ul>
+    			<li><a href="/about">About Dan</a></li>
+    			<li><a href="/contact">Contact Dan</a></li>
+    			<li><a href="/custom-rods-fly-gear">Rods and Gear</a></li>
+    			<li><a href="/best-fishing-locations">Fishing Holes</a></li>
+    			<li><a href="/testimonials">Testimonials</a></li>
+    			<li><a href="/home">Home</a></li>      			
+    		</ul>
+  		<nav>
+			<div class="application"><a href="#">Fishing Application</a></div>
+	  </header>
 
 <%= yield %>
+
+        <footer>
+  <div class="footercontents">
+  
+          <div class="imageblock">
+        <%= image_tag("dan_footer.png", :width => "517", :height => "213") %>
+       <a href="https://maps.google.com/maps?hl=en&q=2237+W.+McLean+Ave,+Chicago,+IL+60647&ie=UTF-8&hq=&hnear=0x880fd296614f2b43:0xfd074030d22dae1,2237+W+McLean+Ave,+Chicago,+IL+60647&gl=us&ei=t43EULzdHJDg2wWXpYAg&ved=0CCsQ8gEwAA" target="_blank"><%=image_tag("map_it.png")%></a>
+        
+        </div> 
+        <ul>
+    			<li><a href="/about">About Dan</a></li>
+    			<li><a href="/contact">Contact Dan</a></li>
+    			<li><a href="/custom-rods-fly-gear">Rods and Gear</a></li>
+    			<li><a href="/best-fishing-locations">Fishing Holes</a></li>
+    			<li><a href="/testimonials">Testimonials</a></li>
+    			<li><a href="/home">Home</a></li>      			
+      </ul>
+        <div class="clear"></div>
+        </div>        
+</footer>
+  
 
 <script type="text/javascript">
   var _gaq = _gaq || [];

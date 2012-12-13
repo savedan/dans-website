@@ -1,86 +1,75 @@
-@font-face {
-	font-family: Crimson-Roman;
-	src: url("Crimson-Roman.otf") format("opentype");
-}
-
-@font-face {
-	font-family: Crimson-Semibold;
-	src: url("Crimson-Semibold.otf") format("opentype");
-}
-
-
-
 body {
-	font-family: 'Open Sans';
-	background-color: #F8F8F8;
+	background: url(../img/gray_jean.png) repeat top center;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Source Sans Pro';
 }
 
-h2 {
-	text-align: center;
-	color: white;
-	font-size: 25px;
-	font-family: 'Bree Serif';
-	font-weight: 400;
-	-webkit-font-smoothing: antialiased;
-	line-height: 40px;
+/*NAV STYLES*/
+	
+a {
+	text-decoration: none;
 }
 
-h2 a {
-	color: white;
-	font-style: underline;
+header {
+	height:117px;
+	background-color:black;
+	margin-top:-20px;
 }
-
-.headline {
-	background: #F8F8F8;
-	text-align: center;
-	font-family: 'Open Sans';
-	height: 125px;
-	margin: 75px 0 40px 0;
-} 
 
 .logo {
-	background-color: #6196a0;
-	height: 100px;
+	float:left;
+	padding:30px 0 0 40px;
+}
+
+nav {
+	line-height: 30px
+}
+
+nav li{
+	float:left;
+	background:url('../img/star.png') -1% 90%  no-repeat;
+	padding:50px 20px 0 20px;
+	font-size:17px;
+	text-transform:uppercase;
+	text-shadow:0 .2px 0 pink;
+}
+
+nav li:first-child {
+	background:none;
+}
+
+nav li a {
+	color:#f7b915;
+	padding:0 0 0 20px
+}
+
+
+nav li a:hover {
+	color:#c44545;
+	text-shadow:inset 0 .5px white;
+	text-transform:uppercase;
+}
+
+/*MAIN IMAGE CAROUSEL*/
+
+.title {
+	margin-top: 50px;
+	margin-bottom: -50px;
 } 
 
-.headline h2 {
+.maintitle {
 	text-align: center;
-	color: black;
-	font: 800 64px/64px "Open Sans";
-	text-transform: uppercase;
-	-webkit-font-smoothing: antialiased;
-	margin-bottom: 20px;
-}
-
-.headline h3 {
-	text-align: center;
-	color: #333A3B;
-	font: 800 28px/28px "Open Sans";
-	text-transform: uppercase;
-	-webkit-font-smoothing: antialiased;
-	margin-bottom: 20px;
-}
-
-.kern {
-	font: 400 64px/64px "gentium book basic";
-	font-style: italic;
-	text-transform: none;
-}
-
-.smallkern {
-	font: 400 28px/28px "gentium book basic";
-	font-style: italic;
-	text-transform: none;
-}
-
-.headline h2.link a {
-	color: black;
-	font-style: underline;
+	color: #28292B;
+	font-size: 45px;
+	line-height: 117px;
+	margin-right: 150px;
 }
 
 .blueberry { 
 	margin: 0 auto;
-	width: 1200px;
+	width: 880px;
+	height: 400px;
 }
 .blueberry .slides {
 	display: block;
@@ -93,11 +82,94 @@ h2 a {
 	left: 0;
 	overflow: hidden; 
 }
+
+.blueberry .slides li h2 {
+	position: absolute; 
+   	top: 45px; 
+   	left: 490px; 
+	width: 240px;
+	height: 20px;
+	padding: 15px 43px;
+
+	/* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.7);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	text-align: center;
+	font-family: "Arbutus Slab";
+	color: #83665c;
+	font-size: 30px;
+	line-height: 23px;
+	font-weight: bold;
+	text-shadow: 2px 0px 0px #fff;
+    filter: dropshadow(color=#fff, offx=2, offy=0);
+
+}
+
+.blueberry .slides li p {
+	position: absolute; 
+   	top: 115px; 
+   	left: 490px; 
+	width: 240px;
+	height: 190px;
+	padding: 15px 43px;
+	/* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.7);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	text-align: center;
+	color:#F5B919;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 300;
+
+}
+
+
 .blueberry .slides li img {
 	display: block;
 	width: 100%; 
 	max-width: none;
 }
+
+.blueberry .slides .learn-more-button {
+	position: absolute; 
+   	top: 310px; 
+   	left: 590px; 
+}
+
+.learn-more-button {
+	-moz-box-shadow: 0px 1px 0px 0px #000000;
+	-webkit-box-shadow: 0px 1px 0px 0px #000000;
+	box-shadow: 0px 1px 0px 0px #000000;
+	background-color:#f15a4d;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #f15a4d;
+	display:inline-block;
+	text-align: center;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #000000;
+	padding: 6px 24px;
+}
+
+.learn-more-button:active {
+	position:relative;
+	top:1px;
+}
+
 .blueberry .slides li.active { display: block; position: relative; }
 .blueberry .crop li img { width: auto; }
 
@@ -120,7 +192,7 @@ h2 a {
 }
 .blueberry .pager li a span {
 	overflow: hidden;
-	background: #c0c0c0;
+	background: #ffb015;
 	text-indent: -9999px;
 	-webkit-border-radius: 2px;
    	-moz-border-radius: 2px;
@@ -128,175 +200,758 @@ h2 a {
 }
 .blueberry .pager li.active a span { background: #404040; }
 
-.middle {
-	height: 250px;
+/*SUB HEADINGS*/
+
+.subhead {
+	font-family: "Arbutus Slab";
+	font: #231F20 20px;
+	text-align: center;
+	font-style: italic;
+	font-weight: lighter;
+	margin: 50px 0 10px 0;
 }
 
-.location {
-	position: absolute;
-	display: inline-block;
-	font-size: 18px;
-	font-family: 'Bree Serif';
-	text-align: left;
-	margin: 30px 0px 0px 450px;
-	padding: 10px 0 75px 0;
-	line-height: 2.0em;
+.hooked-on-dan {
+	font: #231F20;
+	background: #ffffff;
+	border-bottom: #fbedd0 14px solid;
+	height: 175px;
 }
 
-.phone {
-	font-size: 14px;
-	font-family: 'Bree Serif';
+.hooked-on-dan ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+	width: 940px;
+	*zoom: 1;
 }
 
-.smallmap {
-	display: inline-block;
-	margin: 30px 0px 75px 265px;
+.hooked-on-dan ul:before,
+.hooked-on-dan ul:after {
+	content: "";
+	display: table;
 }
 
-.bucktown {	
+.hooked-on-dan ul:after {
+	clear: both;
+}
+
+.hooked-on-dan li {
+	float: left;
+	margin: 0 20px 20px 0;
+	padding-left: 100px;
+	width: 200px;
+}
+
+.hooked-on-dan h3 {
+	font-family: "Arbutus Slab";
+	color: #231F20;
 	font-size: 16px;
-	font-family: 'Open Sans';
+	line-height: 23px;
+	font-weight: lighter;
 }
 
-.operation {
+.hooked-on-dan .hooked-family {
+	margin-right: 0;
+}
+
+.hooked-rods {
+	background: url(../img/icon_callout.png) 16px 24px no-repeat;
+}
+
+.hooked-scope {
+	background: url(../img/icon_callout.png) 16px 24px no-repeat;
+}
+
+.hooked-family {
+	background: url(../img/icon_callout.png) 16px 24px no-repeat;
+}
+
+.hooked-on-dan li a {
+	float:left;
+	color: #F15A29;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.hooked-on-dan li a img {
+	display: none;
+}
+
+.hooked-on-dan li a:hover {
+	color:#F5B919;
+	text-shadow:inset 0 .5px white;
+	text-decoration: none;
+}
+
+.hooked-on-dan li a img:hover {
+	display: block;
+}
+
+/*COLUMNS*/
+
+.about-dan {
+	height: 520px;
+}
+
+.about-dan ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+	width: 940px;
+	*zoom: 1;
+}
+
+.about-dan ul:before,
+.about-dan ul:after {
+	content: "";
+	display: table;
+}
+
+.about-dan ul:after {
+	clear: both;
+}
+
+.about-dan li {
+	float: left;
+	text-align: left;
+	color: #423D3F;
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 20px 10px 0;
+	padding: 0 70px 0 30px;
+	height: 440px;
+	width: 200px;
+	background: #fff;
+	border-radius: 4px;
+}
+
+.about-dan h3 {
+	color: #231F20;
+	font-family: "Arbutus Slab";
+	text-align: left;
+	font-size: 20px;
+	line-height: 23px;
+	font-weight: bold;
+}
+
+.about-dan .the-shop {
+	margin-right: 0;
+}
+
+.about-dan li a {
+	float:left;
+	color: #F15A29;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.hooked-on-dan img {
+	display: none;
+}
+
+.about-dan li a:hover {
+	color:#F5B919;
+	text-shadow:inset 0 .5px white;
+	text-decoration: none;
+}
+
+/*MINI-TESTIMONIALS*/
+
+.quotes {
+	height: 350px;
+	background-color: #fbedd0;
+	margin-bottom: 50px;
+}
+
+.quotes iframe {
+	margin: 25px 0 0 246px;
+}
+
+.quotes  ul {
+	list-style: none;
 	float: right;
-	display: inline-block;
-	font-size: 18px;
-	font-family: 'Bree Serif';
-	margin: 60px 290px 75px 0;
-	line-height: 2.0em;
-
+	margin: 27px 335px 100px 0;
+	width: 350px;
+	*zoom: 1;
 }
 
-.operation p {
-	text-align: center;
+.quotes li {	
+	color: #423D3F;
+	font-size: 16px;
+	line-height: 22px;
+	height: 125px;
+	width: 350px;
 }
 
-.hours {
-	font: 800 18px/18px "Open Sans";
-	text-align: center;
-	padding-bottom: 10px;
+.quotes li:first-child {
+	padding: 0 0 25px 0;
+	}
+
+.quote-text {
+	color: #231F20;
+	text-align: left;
+	font-size: 17px;
+	line-height: 23px;
+	font-weight: normal;
+	text-indent: none;
 }
 
-.bottom {
-	background: #babebf;
-	height: 500px;
+.quote-name {
+	color: #231F20;
+	text-align: left;
+	font-size: 17px;
+	line-height: 23px;
+	font-weight: bold;
+}
+
+.open-quote-mark {
+	font-size: 50px;
+	font-weight: bold;
+	display: block;
+	float: left;
+}
+
+.close-quote-mark {
+	font-size: 50px;
+	font-weight: bold;
+	display: block;
+	float: right;
+	padding: 10px 10px 0 0;
+}
+
+/*TESTIMONIALS*/
+
+.sub-page-title h1{
+	font-family: "Arbutus Slab";
+	color: #231F20; 
+	font-size: 30px;
+	text-align: left;
+	font-weight: lighter;
+	margin: 75px 0 25px 275px;
+}
+
+.testimonials-main {
+	width: 1150px;
+	height: 1434px;
+	background: url(../img/testimonials_background2.png) 90% 0 no-repeat;
+	margin-left: 75px;
+}
+
+.testimonials-main  ul {
+	list-style: none;
+	margin-left: 200px;
+	width: 380px;
+	background: #fff;
+	border-radius: 4px;
+}
+
+.testimonials-main li {	
+	color: #423D3F;
+	font-size: 16px;
+	line-height: 22px;
+	width: 340px;
+	padding: 0 0 85px 0;
+}
+
+.testimonials-main li:first-child {
+	padding-top: 50px;
+}
+
+.testimonials-main li:last-child {
+	padding-bottom: 50px;
+}
+
+.testimonials-main .close-quote-mark {
+	padding: 10px 10px 0 0;
+}
+
+/*YELP*/
+
+.yelp {
+	margin: 0 auto;
+	width: 880px;
+	background: #fff;
+	border-radius: 4px;
+	padding-bottom: 75px;
+	margin-bottom: 50px;
+}
+
+.yelp h2 {
+	padding: 25px 0 15px 25px;
+	color: #231F20;
+	font-family: "Arbutus Slab";
+	font-size: 24px;
+	line-height: 23px;
+	font-weight: bold;
+}
+
+.yelp-logo {
+	display: block;
+	height: 50px;
+	width: 100px;
+	float: right;
+	margin: -60px 50px 0 0;
+}
+
+.hr {
+	width: 700px;
+}
+
+.yelp-review ul {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	*zoom: 1;
+}
+
+.yelp-review ul:before,
+.yelp-review ul:after {
+	content: "";
+	display: table;
+}
+
+.yelp-review ul:after {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.yelp-review li {
+	list-style: none;
+	float: left;
+	margin-right: 15px;
+	padding: 0;
+}
+
+.yelp-user-thumb {
+	width: 40px;
+}
+
+.yelp-user-thumb img {
+	padding: 3px;
+   	border: 1px solid #e1e1e3;
+}
+
+.yelp-star-review .yelp-review-date {
+	width: 90px;
+	margin: 0;
+}
+
+.yelp-star-review {
+	margin-left: 5px;
+}
+
+.yelp-review-date {
+	line-height: 16px;
+}
+
+.yelp-review-text {
+	padding: 35px 0 0 100px;
+	width: 750px;
+}
+
+.yelp-badge {
+	float: right;
+	padding: 25px 50px 0 0;
+}
+
+.yelp a {
+	color: #F15A29;
+	padding-left: 10px;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.yelp a:hover {
+	color:#F5B919;
+	text-shadow:inset 0 .5px white;
+	text-decoration: none;
 }
 
 .hline {
-    border-bottom: solid #ffffff;
+    border-bottom: solid #c6c7da;
     border-bottom-width: 1px;
-    width: 125px; 
+    width: 800px; 
 }
 
-.services {
-	margin: 0 0 0 120px;
-	padding: 40px 0 0 0;
-	width: 300px;
+/*LOCATIONS*/
+
+#locations-wrapper {
+	width: 840px;
+	margin: 20px auto 80px;
+	padding: 0px;
 }
 
-.services h3 {
-	font-size: 18px;
-	font-family: 'Bree Serif';
+#locations-wrapper h1 {
+	font-family: "Arbutus Slab";
+	color: #231F20; 
+	font-size: 30px;
+	text-align: left;
+	font-weight: lighter;
+	padding-top: 50px;
+	margin-bottom: 25px;
+	}
+	
+.places h2 {
+	font: #231F20 20px;
+	text-align: left;
 	font-weight: bold;
+	padding-bottom: 40px;
+	padding-bottom: 10px;
+	}
+	
+.places {
+	width: 860px;
+	margin: auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius:4px;
+	}
+
+.locationlist {
+width: 840px;
+margin-bottom: 70px;
+padding: 0px 0px 0px 0px;
+	}
+	
+.locationlist h1 {
+	font-size: 18px;
 	text-align: center;
-}
-
-.services p {
+	font-weight: bold;
+	color: #000;
+	padding-bottom: 6px;
+	}
+	
+.locationlist p {
 	font-size: 16px;
-	font-family: 'Open Sans';
-	padding: 20px 0 15px 35px;
-	width: 300px;
-}
-
-.checkmark {
-	font: 800 20px/20px 'Open Sans';
-}
-
-.services iframe {
-	padding-left: 80px;
-}
-
-.services a {
-	padding-left: 65px;
-	color: #333A3B;
-	font: 800 14px/14px "gentium book basic";
-	text-decoration: none;
-}
-
-.testimonials {
+	line-height: 1.5em;
+	}	
+	
+.locationlist p img {
+	width: 180px;
+	height: 180px;
 	float: left;
-	margin: -395px 100px 0 550px;
-	padding: 40px 0 0 0;
-	width: 300px;
+	margin-right: 24px;
+	border: 7px solid white;
+	box-shadow: 0 0 3px #AAA,0 0 0 1px rgba(128, 128, 128, 0.25) inset;
+	}
+	
+/*CONTACT*/
+
+#contact-wrapper {
+	width: 840px;
+	margin: 20px auto 80px;
+	padding: 0px;
 }
 
-.testimonials h3 {
-	font-size: 18px;
-	font-family: 'Bree Serif';
-	font-weight: bold;
-	text-align: center;
+#contact-wrapper h1 {
+	font-family: "Arbutus Slab";
+	color: #231F20; 
+	font-size: 30px;
+	text-align: left;
+	font-weight: lighter;
+	padding-top: 50px;
+	}
+	
+.contact {
+	width: 810px;
+	margin: 0px;
+	padding: 25px;
+	background-color: #FFF;
+	border-radius:4px;
 }
-
-.testimonials p {
-	float: right;
+	
+.contact p {
 	font-size: 16px;
-	font-family: 'Open Sans';
-	padding: 20px 0 15px 35px;
+	line-height: 1.4em;
+	padding-left: 75px;
+	}
+
+.contact p img {
+	width: 288px;
+	height: 438px;
+	float: left;
+	margin: 0 110px 0 -65px;
+	border: 1px solid #f2f3f5;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	}
+
+.contact-dan {
+	background: url(../img/smalldan.png) 45% 50% no-repeat;
+}
+	
+.address {
+	font-size: 16px;
+	padding: 10px 0px 0px 0px;
+	}
+	
+.address li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px 0px -1px 0px;
+	}
+
+.address li a {
+	color: #F15A29;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
-.quote1 img {
-	margin: 25px 0 0 0;
-	padding: 0 0 0 50px;
-}
-
-.quote2 img {
-	margin: 0 0 0 0;
-	padding: 0 50px;
-}
-
-.quote {
-	color: #333A3B;
-	font: 400 14px/14px "gentium book basic";
+.address a:hover {
+	color:#F5B919;
+	text-shadow:inset 0 .5px white;
 	text-decoration: none;
-	font-style: italic;
-	margin: 0 0 50px 0;
 }
 
-.name {
+.address li img {
+	width: 244px;
+	height: 148px;
+    border: 7px solid white;
+	box-shadow: 0 0 3px #AAA,0 0 0 1px rgba(128, 128, 128, 0.25) inset;
+	margin: 14px 0px 0px 30px;
+}
+
+.map-link{
+	margin-right: 25px;
+}
+
+.address span {
 	font-size: 16px;
-	font-family: 'Bree Serif';
-	font-weight: bold;
+	font-weight: 900;
+	margin-right: 5px;
+}
+
+.mapquest span {
+	font-size: 12px;
+	font-weight: 100;
+	margin-left: 101px;
+	}
+
+.clear {
+	clear: both;
+	}
+
+/*ABOUT*/
+
+#about-wrapper {
+	width: 840px;
+	margin: 20px auto 80px;
+	padding: 0px;
+}
+
+#about-wrapper h1 {
+	font-family: "Arbutus Slab";
+	color: #231F20; 
+	font-size: 30px;
+	text-align: left;
+	font-weight: lighter;
+	padding-top: 50px;
+	margin-bottom: 25px;
+	}
+
+#about-wrapper img {
+	width: 910px;
+	padding-bottom: 25px;
+
 }
 
 .about {
-	float: right;
-	margin: -395px 125px 0 0;
-	padding: 40px 0 0 0;
-	width: 300px;
-}
-
-.about h3 {
-	font-size: 18px;
-	font-family: 'Bree Serif';
-	font-weight: bold;
-	text-align: center;
+	width: 860px;
+	margin: 0px;
+	padding: 25px;
+	background-color: #FFF;
+	border-radius:4px;
 }
 
 .about p {
 	font-size: 16px;
-	font-family: 'Open Sans';
-	padding: 25px 0 0 0;
-	text-align: center;
+	line-height: 1.4em;
 }
 
-.about iframe {
-	padding-top: 25px;
+.about h2 {
+	color: #231F20; 
+	font-size: 30px;
+	text-align: left;
+	font-weight: bold;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.about .dan-since {
+	padding-top: 10px;
 }
 
 .about a {
-	text-align: center;
-	color: #333A3B;
-	font: 800 14px/14px "gentium book basic";
+	color: #F15A29;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-left: 20px;
+}
+
+.about a:hover {
+	color:#F5B919;
+	text-shadow:inset 0 .5px white;
 	text-decoration: none;
 }
+
+/*RODS AND GEAR*/
+
+#gear-wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#gear-wrapper h1 {
+	font-family: "Arbutus Slab";
+	color: #231F20; 
+	font-size: 30px;
+	text-align: left;
+	font-weight: lighter;
+	padding-top: 50px;
+	margin-bottom: 25px;
+}
+
+#gear-wrapper p {
+	font-size:16px;
+	line-height: 1.4em;
+}
+
+#gear-wrapper h2 {
+	font-family: "Arbutus Slab";
+	color: #231F20; 
+	font-size: 24px;
+	text-align: left;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
+#gear-wrapper .hero {
+	width: 910px;
+	padding-bottom: 25px;
+	margin: 0 auto;
+
+}
+
+.gear {
+	margin: 0 auto;
+	width: 910px;
+	*zoom: 1;
+}
+
+.gear:before,
+.gear:after {
+	content: "";
+	display: table;
+}
+
+.gear:after {
+	clear: both;
+}
+
+.product li {
+	float:left;
+	margin-right: 81px;
+}
+
+.product li img {
+	border:6px solid #fff;
+	border-radius:4px;
+	background: #fff;
+	margin: 0 -69px;
+}
+
+.product-description {
+	width: 252px;
+	height: 280px;
+	border-radius:4px;
+	background: #fff;
+	padding: 0 20px 0 20px;
+	margin: 216px -304px 25px;
+}
+
+.last-product {
+	width: 252px;
+	height: 280px;
+	border-radius:4px;
+	background: #fff;
+	padding: 0 20px 0 20px;
+	margin: -305px 540px 25px;
+}
+
+.complete-rod {
+	height:100px;
+	width:880px;
+	border-radius:4px;
+	background: #fff;
+	float:left;
+	margin-left:40px;
+	padding-bottom: 20px;
+}
+
+/*FOOTER STYLES*/
+	
+footer {
+width: 100%;
+background:#333 url(../img/awesomedanfishBW.svg) repeat top center;
+margin: 0px 0px 0px;
+padding: 50px 0px 80px 0px;
+}
+	
+.footercontents	{
+width: 860px;
+margin: auto;
+}
+
+.footercontents ul {
+	width: 130px;
+	display: block;
+	}
+
+.footercontents li {
+	list-style: none;
+	margin-bottom: 14px;
+	}
+	
+.footercontents li a {
+	font: 14px;
+	color: #FFF;
+	font-weight: 900;
+	}
+	
+.footercontents li a:hover {
+	color:#F5B919;
+	text-shadow:inset 0 .5px white;
+	text-decoration: none;
+}
+	
+.imageblock {
+	width: 517px;
+	float: right;
+	}
+	
+.imageblock img {
+padding-bottom: 10px;
+	}	
+
+
+
+
+
+
+
+
+
+

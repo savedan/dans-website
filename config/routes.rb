@@ -1,9 +1,13 @@
 DansWebsite::Application.routes.draw do
   root to: "pages#home"
-  #get 'pages/home' => 'pages#home'
+  get 'home' => 'pages#home'
   get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
+  get 'best-fishing-locations' => 'pages#locations'
+  get 'custom-rods-fly-gear' => 'pages#gear'
+  get 'testimonials' => 'pages#testimonials'	
   
-  get 'fishing-gear' => 'pages#home'
+  # get 'fishing-gear' => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
