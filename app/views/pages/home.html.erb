@@ -21,17 +21,17 @@
             <li><%= image_tag("hero-layer-dan.jpg") %>
                 <h2>MEET DAN</h2>
                   <p>Since 1981,&nbsp; Dan's Tackle Service and Dan has been creating custom rods and flies for 60 years.&nbsp; Dan is a Chicago fly fishing icon.</p>
-                <a class="learn-more-button" href="http://www.danstackleservice.com/about.html">Learn More</a>
+                <%=link_to "Learn more", "/about", :class => "learn-more-button"%>
             </li>
             <li><%= image_tag("hero-layer-gear.jpg")%>
                 <h2>RODS & GEAR</h2>
-                <p>Custom fly rods are Danʼs specialty. Heʼs been building them since 1970. Beyond rods, Danʼs shop has all of the gear youʼll need.</p>
-                <a class="learn-more-button" href="http://www.danstackleservice.com/custom-rods-fly-gear.html">Learn More</a>
+                <p>Custom fly rods are Danʼs specialty.&nbsp; Heʼs been building them since 1970. Beyond rods,&nbsp; Danʼs shop has all of the gear youʼll need.</p>
+                <%=link_to "Learn more", "/custom-rods-fly-gear", :class => "learn-more-button"%>
             </li>
             <li><%=image_tag("hero-layer-customer.jpg") %>
                 <h2>DAN&rsquo;S FANS</h2>
-                <p>One trip to Dan's and you're hooked. See Dan's customers talk about their experiences at Dan's and the fish they've caught as a result.</p>
-                <a class="learn-more-button" href="http://www.danstackleservice.com/testimonials.html">Learn More</a>
+                <p>One trip to Dan's and you're hooked.&nbsp;See Dan's customers talk about their experiences at Dan's and the fish they've caught as a result.</p>
+                <%=link_to "Learn more", "/testimonials", :class => "learn-more-button"%>
             </li>
         </ul>
         <ul class="pager">
@@ -47,15 +47,15 @@
     <ul>
         <li class="hooked-rods">
             <h3>Create hand-crafted custom rods one-on-one with an old pro</h3>
-            <a href="http://www.danstackleservice.com/custom-rods-fly-gear.html">About Dan's Rods</a>
+            <%=link_to "About Dan's Rods", "/custom-rods-fly-gear"%>
         </li>
         <li class="hooked-scope">
             <h3>Get the inside scoop on the best fishing holes in your area.</h3>
-            <a href="http://www.danstackleservice.com/best-fishing-locations.html">See the Holes</a>
+            <%=link_to "See the Holes", "/best-fishing-locations"%>
         </li>
         <li class="hooked-family">
             <h3>Every customer of Dan's is a part of his fisherman family.</h3>
-            <a href="http://www.danstackleservice.com/testimonials.html">About the Fam</a>
+            <%=link_to "About the Fam", "/testimonials"%>
         </li>
     </ul>
 </section>
@@ -69,13 +69,13 @@
         </li>
         <li class="dan-specialty">
             <h3>Dan's Specialty</h3>
-             <p>Custom fly rods are Danʼs specialty -- heʼs been building them since 1970. Dan takes the time to get to know you to craft a rod just for you. His sixty- six years of experience will result in a rod you will be proud of for years to come.  Dan also makes flies that will be perfect for your destination. Stop by the shop and Dan will make a fly while you watch or even teach you how to do it yourself.</p>
-            <a href="http://www.danstackleservice.com/custom-rods-fly-gear.html">Check Out Some Rods</a>
+             <p>Custom fly rods are Danʼs specialty -- heʼs been building them since 1970. Dan takes the time to get to know you to craft a rod just for you. His sixty-six years of experience will result in a rod you will be proud of for years to come.  Dan also makes flies that will be perfect for your destination. Stop by the shop and Dan will make a fly while you watch or even teach you how to do it yourself.</p>
+             <%=link_to "Check Out Some Rods", "/custom-rods-fly-gear"%>
         </li>
         <li class="the-shop">
             <h3>The Shop</h3>
              <p>Like many of the best fishing locations in the world, Danʼs shop is a little bit hard to find. But if youʼre serious about fly fishing, itʼs worth the effort. Danʼs little shop has all of the gear youʼll need for your next fishing trip, be it to your local river or to a destination like Alaska. Whether youʼre a beginner or an expert, Dan has the gear and the knowledge to make your next fishing trip a success.</p>
-            <a href="http://www.danstackleservice.com/contact.html">Find the Shop</a>
+             <%=link_to "Find the Shop", "/contact"%>
         </li>
     </ul>
 </section>

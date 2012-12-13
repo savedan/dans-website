@@ -144,6 +144,8 @@ reviewsFromYelpRED.gif: reviewsFromYelpRED-fc45454641d38bd88e357aae3e11e06c.gif
 reviewsFromYelpRED/index.gif: reviewsFromYelpRED-fc45454641d38bd88e357aae3e11e06c.gif
 rod.jpg: rod-df970d2da5088d9d13ca7215cd1f8c2f.jpg
 rod/index.jpg: rod-df970d2da5088d9d13ca7215cd1f8c2f.jpg
+savedan_logo.png: savedan_logo-ba1e59b89a946b71a76dc66444ea019a.png
+savedan_logo/index.png: savedan_logo-ba1e59b89a946b71a76dc66444ea019a.png
 screen_shot_2012-12-07 at 8.03.45 PM.png: screen_shot_2012-12-07 at 8.03.45 PM-d71ec0bc24a921d1b8abe9d48bfbfff8.png
 screen_shot_2012-12-07 at 8/index.03.45 PM.png: screen_shot_2012-12-07 at 8.03.45
   PM-d71ec0bc24a921d1b8abe9d48bfbfff8.png
@@ -173,9 +175,11 @@ yelp-five-star.png: yelp-five-star-301706141a52d83bf09e462ef7768763.png
 yelp-five-star/index.png: yelp-five-star-301706141a52d83bf09e462ef7768763.png
 yelp_logo_100x50.png: yelp_logo_100x50-179cd6d29a37f5a0465e791aa05158ea.png
 yelp_logo_100x50/index.png: yelp_logo_100x50-179cd6d29a37f5a0465e791aa05158ea.png
+yelp_logo_50x25.png: yelp_logo_50x25-48f6308c529ad04a63cc27efdcf81e08.png
+yelp_logo_50x25/index.png: yelp_logo_50x25-48f6308c529ad04a63cc27efdcf81e08.png
 yelp_sprite.png: yelp_sprite-b8915184564f78aabb4f0b48eba346b1.png
 yelp_sprite/index.png: yelp_sprite-b8915184564f78aabb4f0b48eba346b1.png
 application.js: application-4e2e093ac9fca0e508d210fb9ce1da08.js
 application/index.js: application-4e2e093ac9fca0e508d210fb9ce1da08.js
-application.css: application-6416847c09bc4090221bfd850b69db5a.css
-application/index.css: application-6416847c09bc4090221bfd850b69db5a.css
+application.css: application-0182c379c9f4ea7b9035ddaceae5a453.css
+application/index.css: application-0182c379c9f4ea7b9035ddaceae5a453.css

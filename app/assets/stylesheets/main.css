@@ -37,6 +37,7 @@ nav li{
 
 nav li:first-child {
 	background:none;
+	margin-left: 75px;
 }
 
 nav li a {
@@ -51,11 +52,17 @@ nav li a:hover {
 	text-transform:uppercase;
 }
 
+.shop-name {
+	display: block;
+	float: left;
+	margin: 30px 0 0 20px;
+}
+
 /*MAIN IMAGE CAROUSEL*/
 
 .title {
 	margin-top: 50px;
-	margin-bottom: -50px;
+	margin-bottom: 30px;
 } 
 
 .maintitle {
@@ -63,7 +70,16 @@ nav li a:hover {
 	color: #28292B;
 	font-size: 45px;
 	line-height: 117px;
-	margin-right: 150px;
+	margin:0 170px 0 0;
+}
+
+.sub-head {
+	text-align: center;
+	font-family: "Arbutus Slab";
+	font-size: 30px;
+	text-align: center;
+	font-weight: lighter;
+	margin: -10px -30px 0 0;
 }
 
 .blueberry { 
@@ -671,7 +687,7 @@ nav li a:hover {
 	width: 288px;
 	height: 438px;
 	float: left;
-	margin: 0 110px 0 -65px;
+	margin: 5px 110px 0 -65px;
 	border: 1px solid #f2f3f5;
 	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
@@ -741,13 +757,14 @@ nav li a:hover {
 	line-height: 23px;
 	font-weight: bold;
 	text-decoration: none;
+	margin-top: -15px;
 }
 
 .small-yelp-logo {
 	display: block;
 	float: left;
 	height: 25px;
-	margin-left: 410px;
+	margin: -15px 0 0 410px;
 }
 
 .clear {
