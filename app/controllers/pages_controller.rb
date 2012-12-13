@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def home
     @title="Dan\'s Tackle Service - Custom Fly Rod Building & Fly Fishing in Chicago"
     @keywords="Fishing Rods Fly Fishing"
-    @description="If you knew Dan you\'d be catching a lot more fish. Or at least you\'d have a place in Chicago to go hang out and bullshit about fishing."
+    @description="If you knew Dan you\'d be catching a lot more fish. Or at least you\'d have a place in Chicago to go hang out and chat about fishing."
     # @google_plus_profile="http://google...."
   end
   def about
