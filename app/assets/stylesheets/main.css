@@ -1,5 +1,5 @@
 body {
-	background: url(../img/gray_jean.png) repeat top center;
+	background: url("gray_jean.png") repeat top center;
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Source Sans Pro';
@@ -28,7 +28,7 @@ nav {
 
 nav li{
 	float:left;
-	background:url('../img/star.png') -1% 90%  no-repeat;
+	background:url('star.png') -1% 90%  no-repeat;
 	padding:50px 20px 0 20px;
 	font-size:17px;
 	text-transform:uppercase;
@@ -256,15 +256,15 @@ nav li a:hover {
 }
 
 .hooked-rods {
-	background: url(../img/icon_callout.png) 16px 24px no-repeat;
+	background: url("icon_callout.png") 16px 24px no-repeat;
 }
 
 .hooked-scope {
-	background: url(../img/icon_callout.png) 16px 24px no-repeat;
+	background: url("icon_callout.png") 16px 24px no-repeat;
 }
 
 .hooked-family {
-	background: url(../img/icon_callout.png) 16px 24px no-repeat;
+	background: url("icon_callout.png") 16px 24px no-repeat;
 }
 
 .hooked-on-dan li a {
@@ -438,7 +438,7 @@ nav li a:hover {
 .testimonials-main {
 	width: 1150px;
 	height: 1434px;
-	background: url(../img/testimonials_background2.png) 90% 0 no-repeat;
+	background: url("testimonials_background2.png") 90% 0 no-repeat;
 	margin-left: 75px;
 }
 
@@ -685,7 +685,7 @@ padding: 0px 0px 0px 0px;
 	}
 
 .contact-dan {
-	background: url(../img/smalldan.png) 45% 50% no-repeat;
+	background: url("smalldan.png") 45% 50% no-repeat;
 }
 	
 .address {
@@ -892,20 +892,30 @@ padding: 0px 0px 0px 0px;
 }
 
 .complete-rod {
+	background:#fff;
 	height:100px;
-	width:880px;
+	width:870px;
 	border-radius:4px;
-	background: #fff;
-	float:left;
-	margin-left:40px;
-	padding-bottom: 20px;
+	margin-bottom: 40px;
+	padding: 10px 20px 50px 20px;
 }
+
+.complete-rod p {
+	display: block;
+	width: 640px;
+}
+
+.complete-rod img {
+	float: right;
+	margin: -132px 30px 0 0;
+}
+
 
 /*FOOTER STYLES*/
 	
 footer {
 width: 100%;
-background:#333 url(../img/awesomedanfishBW.svg) repeat top center;
+background:#333 url("awesomedanfishBW.svg") repeat top center;
 margin: 0px 0px 0px;
 padding: 50px 0px 80px 0px;
 }
