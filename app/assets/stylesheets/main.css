@@ -78,14 +78,12 @@ nav li a:hover {
 }
 .blueberry .slides li {
 	position: absolute;
-	top: 0;
-	left: 0;
 	overflow: hidden; 
 }
 
 .blueberry .slides li h2 {
 	position: absolute; 
-   	top: 45px; 
+   	top: 25px; 
    	left: 490px; 
 	width: 240px;
 	height: 20px;
@@ -112,7 +110,7 @@ nav li a:hover {
 
 .blueberry .slides li p {
 	position: absolute; 
-   	top: 115px; 
+   	top: 95px; 
    	left: 490px; 
 	width: 240px;
 	height: 190px;
@@ -142,7 +140,7 @@ nav li a:hover {
 
 .blueberry .slides .learn-more-button {
 	position: absolute; 
-   	top: 310px; 
+   	top: 290px; 
    	left: 590px; 
 }
 
@@ -613,26 +611,14 @@ nav li a:hover {
 	padding: 20px;
 	background-color: #fff;
 	border-radius:4px;
+	font-size: 16px;
+	line-height: 1.5em;
 	}
 
 .locationlist {
-width: 840px;
-margin-bottom: 70px;
-padding: 0px 0px 0px 0px;
+	width: 840px;
+	margin-bottom: 70px;
 	}
-	
-.locationlist h1 {
-	font-size: 18px;
-	text-align: center;
-	font-weight: bold;
-	color: #000;
-	padding-bottom: 6px;
-	}
-	
-.locationlist p {
-	font-size: 16px;
-	line-height: 1.5em;
-	}	
 	
 .locationlist p img {
 	width: 180px;
@@ -674,6 +660,13 @@ padding: 0px 0px 0px 0px;
 	padding-left: 75px;
 	}
 
+.contact strong {
+	font-family: 'Source Sans Pro';
+	font-size: 18px;
+	line-height: 23px;
+	font-weight: bold;
+	}
+
 .contact p img {
 	width: 288px;
 	height: 438px;
@@ -695,6 +688,7 @@ padding: 0px 0px 0px 0px;
 	
 .address li {
 	list-style: none;
+	line-height: 1.8em;
 	padding: 0px;
 	margin: 0px 0px -1px 0px;
 	}
@@ -726,6 +720,7 @@ padding: 0px 0px 0px 0px;
 }
 
 .address span {
+	font-family: "Arbutus Slab";
 	font-size: 16px;
 	font-weight: 900;
 	margin-right: 5px;
@@ -736,6 +731,24 @@ padding: 0px 0px 0px 0px;
 	font-weight: 100;
 	margin-left: 101px;
 	}
+
+.yelp-link {
+	display: block;
+	float: left;
+	padding: 3px 0 0 10px;
+	color: #F15A29;
+	font-size: 14px;
+	line-height: 23px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.small-yelp-logo {
+	display: block;
+	float: left;
+	height: 25px;
+	margin-left: 410px;
+}
 
 .clear {
 	clear: both;
